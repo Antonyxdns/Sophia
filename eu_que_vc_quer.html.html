@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me Beija?</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_vqaCDSvuZszF3GjmICv0zziEo7eWbi8lkQ&usqp=CAU') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .button {
+            font-size: 2em;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        #mario {
+            width: 50px;
+            height: 50px;
+            background: url('https://img.icons8.com/ultraviolet/2x/super-mario.png') no-repeat center center;
+            background-size: cover;
+            animation: jump 1s infinite;
+            position: absolute;
+            top: 20px;
+        }
+        @keyframes jump {
+            0%, 100% {
+                top: 20px;
+            }
+            50% {
+                top: -20px;
+            }
+        }
+    </style>
+    <script>
+        function openImage() {
+            window.open('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkBPhVxFyyYTJDEhV3sD1D-ed-MtJNR5yGr4VYHGECXd_mUFbBSRfV1vs&s=10', '_blank');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Me Beija?</h1>
+        <button class="button" onclick="openImage()">Sim</button>
+        <button class="button" onclick="openImage()">Sim</button>
+        <div id="mario" onclick="openImage()"></div>
+    </div>
+</body>
+</html>
